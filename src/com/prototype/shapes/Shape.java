@@ -1,4 +1,4 @@
-package com.prototype_cache;
+package com.prototype.shapes;
 
 import java.util.Objects;
 

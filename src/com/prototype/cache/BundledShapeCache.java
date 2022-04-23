@@ -1,5 +1,8 @@
-package com.prototype_cache;
+package com.prototype.cache;
 
+import com.prototype.shapes.Circle;
+import com.prototype.shapes.Rectangle;
+import com.prototype.shapes.Shape;
 import java.util.HashMap;
 import java.util.Map;
 

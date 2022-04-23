@@ -1,6 +1,6 @@
 
-import com.prototype_cache.BundledShapeCache;
-import com.prototype_cache.Shape;
+import com.prototype.cache.BundledShapeCache;
+import com.prototype.shapes.Shape;
 
 public class Principal {
 
