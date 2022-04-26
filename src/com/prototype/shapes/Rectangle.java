@@ -2,8 +2,8 @@ package com.prototype.shapes;
 
 public class Rectangle extends Shape {
 
-    public int width;
-    public int height;
+    private int width;
+    private int height;
 
     public Rectangle() {
     }
@@ -11,11 +11,31 @@ public class Rectangle extends Shape {
     public Rectangle(Rectangle target) {
         super(target);
         if (target != null) {
-            this.width = target.width;
-            this.height = target.height;
+            this.setWidth(target.getWidth());
+            //A linha anterior é equivalente a
+            //this.width = target.width;
+            this.setHeight(target.getHeight());
+            //A linha anterior é equivalente a
+            //this.height = target.height;
         }
     }
 
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+    
     @Override
     public Shape clone() {
         return new Rectangle(this);
@@ -27,6 +47,8 @@ public class Rectangle extends Shape {
             return false;
         }
         Rectangle shape2 = (Rectangle) object2;
-        return shape2.width == width && shape2.height == height;
+        return shape2.getWidth() == getWidth() && shape2.getHeight() == getHeight();
+        //A linha anterior é equivalente a
+        //return shape2.width == width && shape2.height == height;
     }
 }

@@ -8,6 +8,7 @@ public class Principal {
 
         BundledShapeCache cache = new BundledShapeCache();
 
+        //Cria 3 formas geométricas
         Shape shape1 = cache.get("Circulo grande verde");
         Shape shape2 = cache.get("Retangulo medio azul");
         Shape shape3 = cache.get("Retangulo medio azul");
